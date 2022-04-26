@@ -5,9 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto</title>
+    <link rel = stylesheet href="style.css" type="text/css"> 
 </head>
 <body>
-<input/>Ingrese el texto aqui
-    
+<textarea name="textarea" rows="10" cols="50">Ingrese el texto aqui</textarea>
+
+<button onclick="encriptar()">encriptar</button>
+<button name = "desencriptar">desencriptar</button>
+
+<div id="resultado">
+<img src="img/1.png">
+</div>
+
+<script>
+    function encriptar(){
+        document.getElementById("resultado").style.display = "none";
+    }
+</script>
+
 </body>
+<footer>
+
+</footer>
 </html>
