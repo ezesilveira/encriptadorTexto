@@ -8,23 +8,34 @@
     <link rel = stylesheet href="style.css" type="text/css"> 
 </head>
 <body>
-<textarea name="textarea" rows="10" cols="50">Ingrese el texto aqui</textarea>
+<textarea id = "textoIngresado" name="textInput" rows="10" cols="50">Ingrese el texto aqui</textarea>
 
-<button onclick="encriptar()">encriptar</button>
-<button name = "desencriptar">desencriptar</button>
+<button onclick = "encriptar()">encriptar</button>
+<button onclick = "desencriptar()">desencriptar</button>
 
 <div id="resultado">
 <img src="img/1.png">
 </div>
 
 <script>
+    var VariableTextoIngresado = ""
+    var VariableTextoEncriptado = ""
+    var VariableTextoDesencriptado = ""
+
     function encriptar(){
+        VariableTextoIngresado = document.getElementById("textoIngresado").value;
         document.getElementById("resultado").style.display = "none";
+        
     }
+    function desencriptar(){
+        VariableTextoIngresado = document.getElementById("textoIngresado").value;
+        document.getElementById("resultado").style.display = "none";
+        
+    }    
 </script>
 
 </body>
 <footer>
-
+<p>Encriptador / Desencriptador de Texto 1.0</p>
 </footer>
 </html>
