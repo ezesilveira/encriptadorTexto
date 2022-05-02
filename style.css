@@ -1,3 +1,17 @@
 #div resultado{
     border: 1px;
 }
+button{
+    position: absolute;
+    background-color: darkblue;
+    border: 0px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    color: white;
+    font-family: "Inter"
+   
+}
+body{
+    background-color: #e5e5e5;
+}
