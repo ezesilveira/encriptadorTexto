@@ -2,20 +2,23 @@ var VariableTextoIngresado = ""
 var VariableTextoEncriptado = ""
 var VariableTextoDesencriptado = ""
 var chars = {'a':'ai','e':'enter','i':'imes','o':'ober','u':'ufat'};
-var chars2 = {'ai':'a','enter':'e','imes':'i','ober':'o','ufat':'u'};
-//document.getElementById("textoResultado").style.display = "none";
+
 
 function encriptar(){
     var e = document.getElementById("textoIngresado").value;
     var hh = e.replace(/[aeiou]/g, m => chars[m]);
-    console.log(hh);
+    
     document.getElementById("textoResultado").value = hh;
 }
 function desencriptar(){
-    var e = document.getElementById("textoIngresado").value;
-    var hh = e.replace(/[ai]/g, m => chars2[m]);
-    console.log(hh);
-    document.getElementById("textoResultado").value = hh;
+    let replacementMap = {"ai":"a","enter": "e","imes": "i","ober": "o","ufat": "u"}
+    let sentence = document.getElementById("textoIngresado").value;
+
+    for (key in replacementMap) {
+		sentence = sentence.replaceAll(key, replacementMap[key])
+    }
+
+    document.getElementById("textoResultado").value = sentence;
 }
 
 /*var campoResultado = document.querySelector("#textoIngresado");
