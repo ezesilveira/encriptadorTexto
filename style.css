@@ -1,15 +1,13 @@
-#div resultado{
-    border: 1px;
-}
 #advertencia{
     color: #495057;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 12px;
+    text-align: center;
 }
 #botonencriptar{
     position: center;
     background-color: darkblue;
-    border: 0px;
+    border: 1px;
     width: 328px;
     height: 67px;
     border-radius: 24px;
@@ -20,17 +18,19 @@
 #botondesencriptar{
     position: center;
     background-color:#D8DFE8;
-    border: 5px;
+    border: 1px;
     border-color: darkblue;
     width: 328px;
     height: 67px;
     border-radius: 24px;
     color: darkblue;
     font-family: 'Nunito Sans', sans-serif;
-   
 }
-body{
-    background-color: #e5e5e5;
+main{
+    background: #F3F5FC;
+    position: relative;
+    width: 1440px;
+    height: 1024px;
 }
 footer{
     font-family: 'Nunito Sans', sans-serif;
@@ -39,32 +39,72 @@ footer{
 }
 .botonesdiv{
     text-align: center;
+    box-sizing: border-box;
+    
 }
 .areaTextoIngresado{
     font-family: 'Nunito Sans', sans-serif;
     display: inline-block;
     color: darkblue;
     font-size: 18px;
-    background-color: #e5e5e5;
+    /* border-style: none; */
 }
-.textoIngresado{
+#textoIngresado{
     text-align: center;
     display: inline-block;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    /* border-style: none; */
 }
-.textoIngresado{
-    text-align: center;
-    display: inline-block;
-}
-#resultado{
+#cuadroResultado{
     display: inline-block;
     font-family: 'Nunito Sans', sans-serif;
     color: #495057;
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 750px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
 }
 #ningunMensaje{
+    text-align: center;
+    width: 336px;
+    height: 58px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
     font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 }
-ingresaElTexto{
+#ingresaElTexto{
+    width: 336px;
+    height: 48px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+#textoResultado{
+align-self: center;
+vertical-align:center;
+display: none;
 }
 .invisible{
     display: none;

@@ -11,23 +11,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <main>
     <section>
-    <textarea id = "textoIngresado" name="textoIngresado" class="areaTextoIngresado" cols="50" rows="10"placeholder="Ingrese el texto"></textarea>
-    <div id="resultado">
-            
-            <!-- <p id="ningunMensaje">Ningún mensaje fue encontrado</p>
-            <p id="ingresaElTexto">Ingresa el texto que desees encriptar o desencriptar.</p> -->
-    </div>
-    <textarea id = "textoResultado" name="resultado" class="areaTextoIngresado" cols="50" rows="10"></textarea>
+    <textarea id ="textoIngresado" name="textoIngresado" class="areaTextoIngresado" cols="40" rows="10"placeholder="Ingrese el texto"></textarea>
+    </section>
+    <section id="cuadroResultado">
+
+    <img src="img/Muñeco.png" alt="">
+    <p id="ningunMensaje">Ningún mensaje fue encontrado</p>
+    <p id="ingresaElTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
     
+    <textarea id = "textoResultado" name="resultado" class="areaTextoIngresado" cols="40" rows="10"></textarea>
     </section>
     <section>
-        <p id="advertencia">Solo letras minúsculas y sin acentos</p>
+        <p id="advertencia">!Solo letras minúsculas y sin acentos</p>
         <div id="botonesdiv">
             <button onclick= encriptar() id = "botonencriptar" class="botones">Encriptar</button>
             <button onclick= desencriptar() id = "botondesencriptar" class="botones">Desencriptar</button>
         </div>
     </section>
+    </main>
 <script src="js/script.js"></script>
 
 </body>
