@@ -1,12 +1,18 @@
-var VariableTextoIngresado = ""
-var VariableTextoEncriptado = ""
-var VariableTextoDesencriptado = ""
+var textoFinal = ""
 var chars = {'a':'ai','e':'enter','i':'imes','o':'ober','u':'ufat'};
+const typed = new Typed(".typed",{
+    strings: 
+        [textoFinal],
+        typeSpeed: 600,
+        startDelay: 100
 
+    
+});
 
 function encriptar(){
     var e = document.getElementById("textoIngresado").value;
     var hh = e.replace(/[aeiou]/g, m => chars[m]);
+    /* textoFinal = hh; */
     document.getElementById("textoResultado").value = hh;
     display();
 }
@@ -17,6 +23,7 @@ function desencriptar(){
     for (key in replacementMap) {
 		sentence = sentence.replaceAll(key, replacementMap[key])
     }
+    /* textoFinal = sentence; */
     document.getElementById("textoResultado").value = sentence;
     display();
 }
