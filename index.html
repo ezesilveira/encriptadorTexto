@@ -15,29 +15,35 @@
         <section id="logo">
         <img src="img/Vector.png" alt="">
         </section>
-    <section>
-    <textarea id ="textoIngresado" name="textoIngresado" class="areaTextoIngresado" cols="40" rows="10"placeholder="Ingrese el texto"></textarea>
-    </section>
-    <section id="cuadroResultado">
-
-    <img src="img/Muñeco.png" alt="">
-    <p id="ningunMensaje">Ningún mensaje fue encontrado</p>
-    <p id="ingresaElTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
-    
-    <textarea id = "textoResultado" name="resultado" class="areaTextoIngresado" cols="40" rows="10"></textarea>
-    </section>
-    <section>
+        
+        <section id="seccionIngresado">
+        <textarea id ="textoIngresado" cols="40" rows="10"placeholder="Ingrese el texto"></textarea>
+        </section>
+        
+        <section id="seccionResultado">
+            <div id="imagenesResultado">
+                <img src="img/Muñeco.png" alt="">
+                <p id="ningunMensaje">Ningún mensaje fue encontrado</p>
+                <p id="ingresaElTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div id="resultadoFinal">
+                <textarea id ="textoResultado" cols="22" rows="15"></textarea>
+                <button onclick= copiarPortapapeles() id ="botoncopiar">Copiar</button>
+            </div>
+        </section>
+            
+        <section id="seccionBotones">
         <p id="advertencia">!Solo letras minúsculas y sin acentos</p>
         <div id="botonesdiv">
             <button onclick= encriptar() id = "botonencriptar" class="botones">Encriptar</button>
             <button onclick= desencriptar() id = "botondesencriptar" class="botones">Desencriptar</button>
         </div>
-    </section>
+        </section>
     </main>
 <script src="js/script.js"></script>
 
 </body>
 <footer>
-<p>Encriptador / Desencriptador de Texto 1.0 - Ezequiel Silveira</p>
+<p>Encriptador / Desencriptador de Texto 1.0 - Edgardo Ezequiel Silveira</p>
 </footer>
 </html>
