@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto</title>
-    <link rel = stylesheet href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
@@ -17,12 +18,20 @@
         </section>
         
         <section id="seccionIngresado">
-        <textarea id ="textoIngresado" cols="40" rows="10"placeholder="Ingrese el texto"></textarea>
+        <textarea id ="textoIngresado" cols="40" rows="9"placeholder="Ingrese el texto"></textarea>
+        </section>
+
+        <section id="seccionBotones">
+            <p id="advertencia">!Solo letras minúsculas y sin acentos</p>
+            <div id="botonesdiv">
+                <button onclick= encriptar() id = "botonencriptar" class="botones">Encriptar</button>
+                <button onclick= desencriptar() id = "botondesencriptar" class="botones">Desencriptar</button>
+            </div>
         </section>
         
         <section id="seccionResultado">
             <div id="imagenesResultado">
-                <img src="img/Muñeco.png" alt="">
+                <div id="imagenMuneco"><img src="img/Muñeco.png" alt=""></div>
                 <p id="ningunMensaje">Ningún mensaje fue encontrado</p>
                 <p id="ingresaElTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
@@ -32,14 +41,7 @@
             </div>
         </section>
             
-        <section id="seccionBotones">
-        <p id="advertencia">!Solo letras minúsculas y sin acentos</p>
-        <div id="botonesdiv">
-            <button onclick= encriptar() id = "botonencriptar" class="botones">Encriptar</button>
-            <button onclick= desencriptar() id = "botondesencriptar" class="botones">Desencriptar</button>
-        </div>
-        </section>
-    </main>
+        </main>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="js/script.js"></script>
 

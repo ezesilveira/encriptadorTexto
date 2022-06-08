@@ -1,11 +1,12 @@
 main{
     background: #F3F5FC ;
     position: relative;
-    width: 1440px;
+    width: auto;
     height: 680px;
     font-family: 'Nunito Sans', sans-serif;
 }
 #logo{
+    
     text-align: center;
     vertical-align: middle;
     width: 120px;
@@ -153,7 +154,55 @@ footer{
 
 @media screen and (max-width:480px){
 
-    
-
+    #logo{
+        width: auto;
+        text-align: left;
+    }
+    #imagenMuneco{
+        display: none;
+    }
+    main{
+        height: auto;
+    }
+    #seccionIngresado{
+        height: 200px;
+        width: auto;
+    }
+    #textoIngresado{
+        text-align: left;
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        margin-top: 0px;
+        margin-left: 0px;
+        font-size: 20px;
+        color:#0A3871;
+        resize: none;
+    }
+    #seccionResultado{
+        text-align:center;
+        position: relative;
+        width: auto;
+        height: 220px;
+        left: auto;
+        top: auto;
+    }
+    #advertencia{
+        color: #495057;
+        font-size: 14px;
+        text-align: left;
+        border: 1px;
+        margin-left: 10px;
+        }
+    #imagenesResultado{
+        vertical-align: middle;
+    }
+    #seccionBotones{
+        text-align: center;
+    }
+    #botondesencriptar, #botonencriptar{
+        width: 260px;
+        text-align: center;
+    }
 
 }
