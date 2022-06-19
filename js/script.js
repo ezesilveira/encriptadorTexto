@@ -1,13 +1,5 @@
 var textoFinal = ""
 var chars = {'a':'ai','e':'enter','i':'imes','o':'ober','u':'ufat'};
-const typed = new Typed(".typed",{
-    strings: 
-        [textoFinal],
-        typeSpeed: 600,
-        startDelay: 100
-
-    
-});
 
 function encriptar(){
     var e = document.getElementById("textoIngresado").value;
